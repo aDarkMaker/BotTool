@@ -148,16 +148,13 @@ export function apply(ctx: Context, config: Config) {
 
         const member = await session.bot.getGuildMember(groupId, session.userId)
 
-        // console.log(member)
-        // if (member.roles[0] !== 'member' || member.user.id === '2261265112')
-
         if (member.roles[0] !== 'member') {
           session.send(`<at id="${session.userId}"/> 算你命大，哼~`)
           gameStates.delete(groupId)
           return
         }
 
-        if (member.user.id === '2261265112') {
+        if (member.user.id === 'xxx') {
           session.send(`<at id="${session.userId}"/> 主人也是雑魚呢~`)
           gameStates.delete(groupId)
           return
