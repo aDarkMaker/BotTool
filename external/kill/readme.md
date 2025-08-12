@@ -12,12 +12,12 @@ kill Somebody
 
 ```json
 {
-    "messageId": xxxxx,
-    "userId": xxxxxxx,
-    "content": "xxx",
-    "timestamp": xxxxxxx,
-    "groupId": "xxxx",
-    "deleteTime": xxx
+    "messageId": ,
+    "userId": ,
+    "content": ,
+    "timestamp": ,
+    "groupId": ,
+    "deleteTime":
   }
 ```
 
@@ -25,13 +25,9 @@ kill Somebody
 
 ```json
 {
-    "keywords": [
-        "xxxx",
-        "xxxxx",
-        ……
-    ],
-    "enabled": true,
-    "description": "关键词黑名单数据库，当群成员发送包含这些关键词的消息时，会自动执行kill操作"
+  "keywords": ["xxxx", "xxxxx"],
+  "enabled": true,
+  "description": "关键词黑名单数据库，当群成员发送包含这些关键词的消息时，会自动执行kill操作"
 }
 ```
 
